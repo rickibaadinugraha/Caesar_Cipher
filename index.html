@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cryptography</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="frontend/libraries/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="frontend/styles/main.css">
+</head>
+<body>
+	<!-- navbar -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-md-auto mr-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/pic_logo_thumbnail.png">
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted">
+                        | &nbsp; Cryptography E1
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+	<main>
+		<section class="section-details-header"></section>
+			<section class="section-details-content">
+				<div class="container">
+					<div class="row">
+						<div class="col col-lg-10 col-pl-2">
+                            <div class="card card-details">
+								<h1>Who Is Plaint text?</h1>
+                                <p>Caesar Cipher(pergeseran abjad)</p>
+							<form class="contact100-form validate-form">
+								<div class="wrap-input100 validate-input" data-validate="Name is required">
+									<span class="label-input100">Plain Text</span>
+									<textarea class="input100" name="plantext_caesar" placeholder="Your plain text here..."></textarea>
+									<span class="focus-input100"></span>
+								</div>
+
+								<div class="wrap-input100 input100-select">
+									<span class="label-input100">Choose Key</span>
+									<div>
+										<select class="selection-2" name="key_caesar" option="3">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+											<option>6</option>
+											<option>7</option>
+											<option>8</option>
+											<option>9</option>
+											<option>10</option>
+										</select>
+									</div>
+									<span class="focus-input100"></span>
+								</div>
+
+								<div class="wrap-input100 validate-input">
+									<span class="label-input100">Chiper Text</span>
+									<textarea class="input100" name="result" placeholder="Your chiper text here..."></textarea>
+									<span class="focus-input100"></span>
+								</div>
+					
+								<div class="container-contact100-form-btn">
+									<p class="submit">
+										<input type="submit" value="Encrypt" name="encrypt_caesar"/>
+									</p><br>
+									<p class="submit">
+										<input type="submit" value="Decrypt" name="decrypt_caesar"/>
+									</p>
+								</div>
+									
+							</form>	
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+	</main>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
